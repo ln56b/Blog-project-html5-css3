@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+font-family: atma, cursive;
+}
+@import url('https://fonts.googleapis.com/css?family=Atma&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Mobile polaroid Marie*/
+
+.divpola {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 1rem 2rem;
+    max-width: 70vw;
+}
+.rotdroite,.rotgauche{
+    background: white;
+    box-shadow:0.5rem 0.5rem 1rem;
+    font-size:1.2rem;
+    margin: 2rem 0;
+    text-align:center;
+    }
+.imgpola{
+    height:15rem;
+    margin-top:1rem;
+    margin-bottom: 0rem;
+    width: 92%;
+    }
+.spanpola{
+    display: inline-block;
+    font-size: 1rem;
+    padding : 1rem 0.5rem 3rem 0.5rem;
+    }
+
+.rotdroite:hover, .rotgauche:hover{
+    transform: scale(1.2);
+}

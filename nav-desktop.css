@@ -1,0 +1,42 @@
+/* nav Marie */ 
+.menu .burger{
+    display:none;
+  }
+  .logo{
+    width:5vw;
+    padding:1px;
+    box-shadow:1px 1px 10px lightgray;
+  }
+  .menu{
+    background: linear-gradient(to bottom, #6C6B68, #6C6B68, #6C6B68, #fff,);
+    display:flex;
+  }
+  .searchbar{
+    display:none;
+    margin-left:80em
+  }
+  .navdesk > ul{
+    list-style:none;
+    font-size:1.5vw;
+    display:flex;
+    justify-content:space-between;
+    margin-right:5vw;
+    align-items:center
+    /*margin-left:25%;
+    margin-top:-4%;*/
+  }
+  .navdesk > ul > li{
+    padding:5px;
+    font-size:2.5vw;
+    margin-right:3vw
+  }
+  a{
+    color:#6C6B68;
+  }
+  .navdesk > ul > li:hover{
+    box-shadow:1px 1px 5px gray;
+  }
+  span{
+    width:95%;
+  }
+

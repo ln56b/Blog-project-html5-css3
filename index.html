@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Hélène : Missing meta  -->
+    <meta name="author" content="Marie Vendran - Jérome Valette - Yann Livingston- Hélène Baudrand">
+    <meta name="description" content="A Polaroid trip across 3 countries from the camera point of view">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polarotrips</title>
+    <!--Hélène : End of Missing meta  -->
+    <link rel="stylesheet" href="mobil.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!--nav Marie-->
+    <nav>
+
+        <div class="menu">
+            <a href="index.html">
+                <img class="logo" src="picture/polaroid.png" alt="logo polaroid" />
+            </a>
+            <span><a class="titlepolaro titlepolaro-none" href="index.html" >Polarotrips.com</a></span>
+            <input class="burger" type="checkbox">
+
+            <!--Nav Mobile-->
+            <nav class="navin">
+                <a href="article.html"><i class="material-icons"></i>Japan</a>
+                <a href="article-spain.html"><i class="material-icons"></i>Spain</a>
+                <a href="article-marti.html"><i class="material-icons"></i>Martinique</a>
+                <a href="contact-us.html"><i class="material-icons"></i>Contact</a>
+            </nav>
+            <!--Nav Desktop-->
+            <div class="navdesk">
+                <ul>
+                    <li><a href="index.html" class="titlepolaro">Polarotrips.com</a></li>
+                    <li><a href="article.html">Japan</a></li>
+                    <li><a href="article-spain.html">Spain</a></li>
+                    <li><a href="article-marti.html">Martinique</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Slideshow container Jerome -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+                
+            <img src="picture/alfred-schrock-KBOOjJ4nsLw-unsplash.jpg" alt="">
+            <div class="text">Japan sushis</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="picture/jametlene-reskp-xJF4IEbxcZc-unsplash.jpg" alt="">
+            <div class="text">Japan macha</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="picture/nik-younie-6aWQ9tvOK9c-unsplash.jpg" alt="">
+            <div class="text">Japan addict</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="picture/emile-guillemot-Cca2gUbVhdQ-unsplash.jpg" alt="">
+            <div class="text">Kimono mania</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!--presentation polaroid-->
+    <div id="present" class="presentation">
+        <div id="bubule" class="bulle">
+            <div class="bulle-text">
+                <p>Hi my name is Pola, I am a Polaroid, logic, isn't it? I am also a traveler<span id="dots">...</span><span class="more"  id="more"><br>I traveled in Japan, Martinica and Spain during the whole year. <br> The trip was fabulous adventures because of all the awesome people I met and the great food I tasted. <br> I am really excited to tell you about my trip.</span></p>
+                <button class="bouton1" onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+
+        </div>
+        <div class="polaroid">
+            <img id="pola" src="picture/polaroid.png" alt="">
+        </div>
+    </div>
+
+    <!--Main Marie-->
+    <div class="divpola">
+        <section class="rotdroite">
+        <a href="article.html"><img  src="https://zupimages.net/up/19/38/ei8f.jpg" alt="paysage tokyo" class="imgpola" /></a>
+            <span class="spanpola">#Japan #rain #moodfeels</span>
+        </section>
+        <section class="rotgauche">
+                <a href="article-spain.html"><img src="picture/bilbao.jpg" alt="" class="imgpola" /></a>
+            <span class="spanpola">#Spain #Bilbao</span>
+        </section>
+        <section class="rotdroite">
+                <a href="article-marti.html"><img src="picture/acras.jpg" alt="" class="imgpola" /></a>
+            <span class="spanpola">#Martinique #acras #chezDoudou</span>
+        </section>
+        <section class="rotgauche">
+                <a href="article.html"><img src="https://zupimages.net/up/19/38/epag.jpg" alt="" class="imgpola" /></a>
+            <span class="spanpola">#Japan #Letswrite #japenesestyle</span>
+        </section>
+    </div>
+
+    <!--presentation polaroid-->
+    <div id="present" class="presentation">
+        <div id="bubule" class="bulle">
+            <div class="bulle-text">
+                <p>This trip was amazing...however I met some weird guys...in case you find them, please report to the next police station...<br> HIGH REWARD $$$</p>
+            </div>
+        </div>
+        <div class="polaroid">
+            <img id="pola" src="picture/polaroid.jpg" alt="">
+        </div>
+    </div>
+
+    <!--Main Marie-->
+    <div class="divpola">
+        <section class="rotdroite">
+        <a href="article.html"><img  src="picture/jerome.jpg" alt="paysage tokyo" class="imgpola" /></a>
+            <span class="spanpola">#NeedABeer #SleepIsDead #FakeSmile</span>
+        </section>
+        <section class="rotgauche">
+                <a href="article-spain.html"><img src="picture/marie.jpg" alt="" class="imgpola" /></a>
+            <span class="spanpola">#OldToBeCute #ChuckyIsNotDead</span>
+        </section>
+        <section class="rotdroite">
+                <a href="article-marti.html"><img src="picture/yann.jpg" alt="" class="imgpola" /></a>
+            <span class="spanpola">#OhMyBalls #PhilosophyLover </span>
+        </section>
+        <section class="rotgauche">
+                <a href="article.html"><img src="picture/helene.jpg" alt="" class="imgpola" /></a>
+            <span class="spanpola">#Help!! #CrazyTeam</span>
+        </section>
+    </div>
+    
+    
+    <!--Footer Hélène-->
+
+    <footer class="footer">
+        <div class="footer-col1">
+            <p><a href="#present">About us</a></p>
+            <a href="contact-us.html"><p>Contact</p></a>
+            <p>Copyrights</p>
+        </div>
+        <div>
+            <p><a class="extlink" href="https://www.polaroid.com" target="blank">Polaroid website</a></p>
+            <p><a class="extlink" href="http://www.travelbypolaroid.com/" target="blank">Travelers community</a></p>
+        </div>
+        <!--Hélène social icons-->
+        <div class="social-icons-div">
+        <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->      
+        <div><a class="extlink" href="https://fr-fr.facebook.com/Polaroid/" target="blank"><img class="social-icon" src="picture/facebook.png" alt="facebook icon" height=30rem width=30rem></a></div>
+        <div><a class="extlink" href="https://twitter.com/polaroid/" target="blank"><img class="social-icon" src="picture/twitter.png" alt="twitter icon" height=30rem width=30rem></a></div>
+        <div><a class="extlink" href="https://akarrou.github.io/project1/" target="blank"><img class="social-icon" src="picture/github.png" alt="github icon" height=30rem width=30rem></a></div>
+        </div>
+    </footer>
+    <!--Footer Fin Hélène-->
+
+    <!-- Java Script Jerome-->
+    <script type="text/javascript" src="carrousel.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>

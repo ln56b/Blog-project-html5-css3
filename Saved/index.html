@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" href="bulle-presentation">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Slideshow container Jerome -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="picture/alfred-schrock-KBOOjJ4nsLw-unsplash.jpg" alt="">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="picture/jametlene-reskp-xJF4IEbxcZc-unsplash.jpg" alt="">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="picture/nik-younie-6aWQ9tvOK9c-unsplash.jpg" alt="">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="picture/emile-guillemot-Cca2gUbVhdQ-unsplash.jpg" alt="">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--presentation polaroid-->
+    <div class="presentation">
+        <div class="bulle">
+            <div class="bulle-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam officiis ex facilis accusantium
+                    recusandae, nostrum sed tempore laborum odit ea iure, nihil aliquam delectus culpa repellendus
+                    numquam aliquid eius.</p>
+            </div>
+
+        </div>
+        <div class="polaroid">
+            <img src="picture/polaroid.jpg" alt="">
+            <div class="rectancle">
+
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Hélène-->
+
+    <footer class="footer">
+        <div class="footer-col1">
+            <p><a href="#about">About us</a></p>
+            <p><a href="#contact">Contact</a></p>
+            <p>Copyrights</p>
+        </div>
+        <div>
+            <p><a class="extlink" href="https://www.polaroid.com" target="blank">Polaroid website</a></p>
+            <p><a class="extlink" href="http://www.travelbypolaroid.com/" target="blank">Travelers community</a></p>
+        </div>
+        <div>
+            <p><a class="extlink" href="https://fr-fr.facebook.com/Polaroid/" target="blank">Facebook</a></p>
+            <p><a class="extlink" href="https://twitter.com/polaroid" target="blank">Twitter</a></p>
+        </div>
+    </footer>
+
+<!-- Java Script Jerome-->
+<script type="text/javascript" src="carrousel.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,572 @@
+/* Google fonts links */
+@import url("https://fonts.googleapis.com/css?family=Atma&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+/* Color definition with variable 
+ ex : background-color: var(--gris-fonce) */
+:root {
+  --turquoise: #2de1c8;
+  --orange: #fea029;
+  --orange-clair: #fed129;
+  --gris-fonce: #6c6b68;
+}
+
+/*  Mobile Template generic layout */
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    #fff,
+    #fff 5%,
+    #fea029 5%,
+    #fea029 10%,
+    #fed129 10%,
+    #fed129 15%,
+    #2de1c8 15%,
+    #2de1c8 20%,
+    #fff 20%,
+    #fff 100%
+  );
+  color: var(--gris-fonce);
+  font-family: atma, cursive;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile Nav Marie */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 24px;
+  margin-right: 12px;
+  vertical-align: text-bottom;
+}
+
+nav > .menu {
+  align-content: center;
+  background-color: var(--orange);
+  display: flex;
+  padding: 1rem;
+}
+
+.logo {
+  box-shadow: none;
+  display: inline-block;
+  height: auto;
+  width: 60px;
+}
+
+.titlepolaro {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav > .menu .navin {
+  background: inherit;
+  box-sizing: content-box;
+  display: block;
+  float: none;
+  font-size: 20px;
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: height 0.2s;
+}
+
+.menu .navin > * {
+  display: block;
+  letter-spacing: 1px;
+  line-height: 2.5;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.menu .navin input {
+  background: #fff;
+  border: none;
+  color: #fff;
+}
+
+.menu .burger {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Material Icons";
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  right: 30px;
+  width: 50px;
+}
+
+.menu .burger:before {
+  content: "menu";
+}
+
+.menu .burger:checked:before {
+  content: "close";
+}
+
+.menu .burger:checked + nav {
+  height: auto;
+}
+
+.navdesk ul {
+  display: none;
+}
+.menu span {
+  width: 10vw;
+}
+
+/*  Mobile Jerome: Presentation Polaroid*/
+.presentation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 50px 1rem 0 1rem;
+}
+.polaroid img {
+  height: 80px;
+  width: 80px;
+  margin-left: 30px;
+  margin-top: 50px;
+  padding: 5px;
+  box-shadow: -5px 10px 25px rgb(156, 154, 154);
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20%;
+  object-fit: cover;
+}
+.bulle {
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: -5px 10px 25px rgb(156, 154, 154);
+  margin: 0px 1rem 0 1rem;
+  font-size: 1.2rem;
+}
+.bulle-text {
+  background: white;
+  font-family: "Atma", cursive;
+  color: rgb(0, 0, 0);
+  padding: 7px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*texte bulle presentation */
+#more {
+  display: none;
+}
+#dots {
+  display: inline;
+}
+.bouton1 {
+  padding: 6px 0 6px 0;
+  font: Bold 13px Arial;
+  background: #fea029;
+  color: #fff;
+  width: 90px;
+  border-radius: 2px;
+  border: none;
+}
+.bouton1:hover {
+  background: #fed129;
+}
+
+/* Mobile polaroid Marie*/
+
+.divpola {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 1rem 1rem;
+  max-width: 100%;
+}
+.rotdroite,
+.rotgauche {
+  align-self: center;
+  background: white;
+  box-shadow: 0.5rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  max-width: 600px;
+  text-align: center;
+}
+.imgpola {
+  height: 80%;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  object-fit: cover;
+  width: 92%;
+}
+.spanpola {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 1rem 0.5rem 3rem 0.5rem;
+}
+
+.rotdroite:hover,
+.rotgauche:hover {
+  transform: scale(1.2);
+}
+
+/* Mobile Footer Hélène */
+
+.footer {
+  background-color: var(--orange);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Atma", cursive;
+  font-size: 1rem;
+  height: auto;
+  line-height: 2rem;
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  clear: both;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--gris-fonce);
+  font-weight: bold;
+}
+/* Hélène extlinks visited*/
+
+a.extlink:visited {
+  color: darkmagenta;
+}
+
+/* Hélène social icons*/
+
+.social-icons-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 1rem;
+}
+
+/* Mobile detailed pic Marie*/
+.polaroidmain {
+  width: 95%;
+  height: auto;
+  margin: 1vw;
+  box-shadow: 1em 1em 5em black;
+}
+.textmain {
+  margin-top: 80vw;
+  margin-right: 10vw;
+  width: 75%;
+  height: auto;
+}
+.more {
+  font-size: 1rem;
+}
+/* Mobile detailed Marie*/
+.polaroidmain {
+  font-family: atma;
+  width: 70%;
+  border: 1px solid white;
+  text-align: center;
+  display: block;
+  box-shadow: 1em 1em 1em darkgray;
+  display: block;
+  position: absolute;
+  font-size: 1.5vw;
+  z-index: 1;
+}
+.imgmain {
+  width: 95%;
+  height: auto;
+  padding: 1%;
+  display: inline-block;
+  margin-top: 1%;
+}
+span {
+  width: 95%;
+  display: inline-block;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  padding-top: 1em;
+}
+.textmain {
+  display: block;
+  width: 25%;
+  float: right;
+  margin: 1vw;
+  margin-top: 5vw;
+  background-color: black;
+  height: auto;
+  padding: 1vw;
+  box-shadow: 1px 1px 5px;
+  z-index: 1000;
+}
+
+/*Carrousel*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  padding: 10px;
+  background-color: #fea029;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #6c6b68;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mySlides img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /*-position: 60% 0%;*/
+}
+.polaroid-detailpic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  font-family: atma;
+  width: 80%;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 1em 1em 5em;
+  font-size: 1.5vw;
+  margin: 5vw 5vw;
+  background-color: #fff;
+}
+.polaroid-detailpic img {
+  width: 95%;
+  height: auto;
+  display: inline-block;
+  margin-top: 2.5%;
+  object-fit: cover;
+}
+.polaroid-detailpic span {
+  font-family: atma;
+  width: 95%;
+  display: inline-block;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-size: 3vw;
+}
+.z1 {
+  position: relative;
+  z-index: 1;
+}
+.z2 {
+  position: absolute;
+  z-index: 2;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  width: 100%;
+}
+.text-detailpic {
+  margin: 1em;
+  width: 80%;
+  height: auto;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
+}
+
+/* Début CSS Mobil contact (Yann)*/
+h2 {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  color: #6c6b68;
+  background-color: #fed129;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container,
+.container div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.container label {
+  align-self: flex-start;
+  padding: 1rem 0 0.5rem 1rem;
+}
+
+input {
+  border-radius: 5%;
+  box-shadow: -5px 10px 25px rgb(156, 154, 154);
+  line-height: 2rem;
+  padding-left: 1rem;
+  width: 15rem;
+}
+
+textarea {
+  border-radius: 5%;
+  box-shadow: -5px 10px 25px rgb(156, 154, 154);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 15rem;
+}
+
+#send_style {
+  color: white;
+  background: var(--orange);
+  border-radius: 5%;
+  margin: 2em 1em;
+  padding-left: 0;
+  width: 10em;
+}
+
+
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 5rem;
+  margin: 2em 1em;
+}
+
+.newsletter label {
+  line-height: 2rem;
+  margin: 2em 1em;
+}
+
+.newsletter input {
+  height: 5em;
+  margin: 2em 1em;
+  width: 5em;
+}
+
+
+/* Fin CSS Mobil contact (Yann)*/
