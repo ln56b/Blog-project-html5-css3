@@ -59,7 +59,7 @@ a {
   vertical-align: text-bottom;
 }
 
-nav > .menu {
+.menu {
   align-content: center;
   background-color: var(--orange);
   display: flex;
@@ -80,7 +80,7 @@ nav > .menu {
   font-size: 1.2rem;
 }
 
-nav > .menu .navin {
+.navin {
   background: inherit;
   box-sizing: content-box;
   display: block;
@@ -93,21 +93,19 @@ nav > .menu .navin {
   transition: height 0.2s;
 }
 
-.menu .navin > * {
+.navin > * {
   display: block;
   letter-spacing: 1px;
-  line-height: 2.5;
-  padding: 0 20px;
-  width: 100%;
+  line-height: 2rem;
+  width: auto;
 }
 
-.menu .navin input {
+.navin input {
   background: #fff;
-  border: none;
   color: #fff;
 }
 
-.menu .burger {
+.burger {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -121,28 +119,28 @@ nav > .menu .navin {
   outline: 0;
   padding: 0;
   position: absolute;
-  text-align: center;
-  right: 30px;
+  right: 0px;
   width: 50px;
 }
 
-.menu .burger:before {
+.burger:before {
   content: "menu";
 }
 
-.menu .burger:checked:before {
+.burger:checked:before {
   content: "close";
 }
 
-.menu .burger:checked + nav {
+.burger:checked + nav {
   height: auto;
+  margin-top: 3rem;
 }
 
 .navdesk ul {
   display: none;
 }
 .menu span {
-  width: 10vw;
+  width: 0vw;
 }
 
 /*  Mobile Jerome: Presentation Polaroid*/
@@ -169,6 +167,7 @@ nav > .menu .navin {
 }
 .bulle {
   height: 100px;
+  background-color: white;
   border-radius: 8px;
   box-shadow: -5px 10px 25px rgb(156, 154, 154);
   margin: 0px 1rem 0 1rem;
